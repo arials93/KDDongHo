@@ -2908,6 +2908,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\WebTitle\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -3139,6 +3140,7 @@
     <Content Include="Static\Web\vendor\slick\slick.scss" />
     <Content Include="Views\WebHome\Index.cshtml" />
     <Content Include="Views\AdminDashboard\Index.cshtml" />
+    <Content Include="Views\WebHome\Product.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
