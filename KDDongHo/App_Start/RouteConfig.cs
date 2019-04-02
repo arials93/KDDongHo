@@ -15,8 +15,8 @@ namespace KDDongHo
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}",
-                defaults: new { controller = "Admin", action = "Index"}
+                url: "",
+                defaults: new { controller = "WebHome", action = "Index" }
             );
         }
     }
