@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="au theme template">
+        <meta name="author" content="Ha_Phuong">
+        <meta name="keywords" content="au theme template">
+
+        <!-- Title Page-->
+        <title>@ViewBag.Title</title>
+
+        <!-- Fontfaces CSS-->
+        @Styles.Render("~/Static/css/font-face.css")
+        @Styles.Render("~/Static/vendor/font-awesome-4.7/css/font-awesome.min.css")
+        @Styles.Render("~/Static/vendor/font-awesome-5/css/fontawesome-all.min.css")
+        @Styles.Render("~/Static/vendor/mdi-font/css/material-design-iconic-font.min.css")
+
+        <!-- Bootstrap CSS-->
+        @Styles.Render("~/Static/vendor/bootstrap-4.1/bootstrap.min.css")
+
+        <!-- Vendor CSS-->
+        @Styles.Render("~/Static/vendor/animsition/animsition.min.css")
+        @Styles.Render("~/Static/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css")
+        @Styles.Render("~/Static/vendor/wow/animate.css")
+        @Styles.Render("~/Static/vendor/css-hamburgers/hamburgers.min.css")
+        @Styles.Render("~/Static/vendor/slick/slick.css")
+        @Styles.Render("~/Static/vendor/select2/select2.min.css")
+        @Styles.Render("~/Static/vendor/perfect-scrollbar/perfect-scrollbar.css")
+
+        <!-- Main CSS-->
+        @Styles.Render("~/Static/css/theme.css")
+
+        @RenderSection("styles", required: false)
+    </head>
+</head>
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        @RenderPage("~/Views/Shared/Partials/_header_mobile.cshtml")
+        <!-- END HEADER MOBILE-->
+        <!-- MENU SIDEBAR-->
+        @RenderPage("~/Views/Shared/Partials/_header.cshtml")
+        <!-- END MENU SIDEBAR-->
+
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            @RenderPage("~/Views/Shared/Partials/_sidebar.cshtml")
+            <!-- HEADER DESKTOP-->
+            <div class="main-content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <!-- Jquery JS-->
+    @Scripts.Render("~/Static/vendor/jquery-3.2.1.min.js")
+    <!-- Bootstrap JS-->
+    @Scripts.Render("~/Static/vendor/bootstrap-4.1/popper.min.js")
+    @Scripts.Render("~/Static/vendor/bootstrap-4.1/bootstrap.min.js")
+    <!-- Vendor JS       -->
+    @Scripts.Render("~/Static/vendor/slick/slick.min.js")
+    @Scripts.Render("~/Static/vendor/wow/wow.min.js")
+    @Scripts.Render("~/Static/vendor/animsition/animsition.min.js")
+    @Scripts.Render("~/Static/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js")
+    @Scripts.Render("~/Static/vendor/counter-up/jquery.waypoints.min.js")
+    @Scripts.Render("~/Static/vendor/counter-up/jquery.counterup.min.js")
+    @Scripts.Render("~/Static/vendor/circle-progress/circle-progress.min.js")
+    @Scripts.Render("~/Static/vendor/perfect-scrollbar/perfect-scrollbar.js")
+    @Scripts.Render("~/Static/vendor/chartjs/Chart.bundle.min.js")
+    @Scripts.Render("~/Static/vendor/select2/select2.min.js")
+
+    <!-- Main JS-->
+    @Scripts.Render("~/Static/js/main.js")
+
+    @RenderSection("scripts", required:false)
+</body>
+</html>
