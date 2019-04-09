@@ -15,11 +15,15 @@ namespace KDDongHo
 
             routes.MapRoute(
                 name: "Default",
-                url: "",
-                defaults: new { controller = "WebHome", action = "Index" }
+                url: "{controller}/{action}",
+                defaults: new { controller = "AdminDashBoard", action = "Index" }
             );
 
-           
+            routes.MapRoute(
+                name: "Product",
+                url: "{controller}/{action}",
+                defaults: new { controller = "AdminDashBoard", action = "Product" }
+            ); 
         }
     }
 }

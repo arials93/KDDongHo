@@ -3141,6 +3141,7 @@
     <Content Include="Views\WebHome\Index.cshtml" />
     <Content Include="Views\AdminDashboard\Index.cshtml" />
     <Content Include="Views\WebHome\Product.cshtml" />
+    <Content Include="Views\AdminDashboard\Product.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

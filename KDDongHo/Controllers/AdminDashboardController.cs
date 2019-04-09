@@ -14,5 +14,10 @@ namespace KDDongHo.Controllers
         {
             return View();
         }
+
+        public ActionResult Product()
+        {
+            return View();
+        }
 	}
 }
