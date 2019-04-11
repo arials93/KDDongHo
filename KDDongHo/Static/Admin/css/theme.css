@@ -4565,7 +4565,7 @@ section {
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 }
 
 .table-data__tool .table-data__tool-left > div {
